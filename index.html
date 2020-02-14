@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENT FORM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
+    
+</head>
+<body>
+    <div class="register">
+    <form method="" action="" name="event_form" onsubmit="return submitEvent()">
+        <label>Event Type: </label>
+        <select id="event">
+            <option>Choose one</option>
+            <option>Birthday</option>
+            <option>Wedding</option>
+            <option>PROM</option>
+        </select>
+        <br><br>
+        <label> Event Title: <input type="textOne" placeholder="type here" name="textOne"></label><br><br>
+        <label>Event Date: <input type="date" > to <input type="date" name="dateOne"></label><br><br>
+        <label>Posting Date: <input type="date" name="dateTwo"></label><br><br>
+        <input type="checkbox"id="text1" name="text-1" value="Is Registration Required?">
+        <label for="text1">Is Registration Required?</label><br><br>
+        <input type="checkbox"id="text2" name="text-2" value="Is this event associated with any Family Progrmas?">
+        <label for="text2">Is this event associated with any Family Progrmas?</label><br><br>
+        <input type="checkbox"id="text3" name="text-3" value="Upon Registration Completion, Are Users to Receive an Auto Generated Email?">
+        <label for="text3">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br><br>
+        <input type="checkbox"id="text4" name="text-4" value="Is there a Point of Contact?">
+        <label for="text4">Is there a Point of Contact?</label><br><br>
+        <input type="checkbox"id="text5" name="text-5" value="Is There a Hosting Command Point of Contact?">
+        <label for="text5">Is There a Hosting Command Point of Contact?</label><br><br>
+        <input type="submit" value="submit" onsubmit="submitEvent">
+    </form>
+</div>
+</body>
+</html>

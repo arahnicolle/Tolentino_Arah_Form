@@ -27,7 +27,8 @@ function submitEvent(){
         textOne.focus();
         return false;
     }
-
-    alert("The form has been successfully submitted");
+    else{
+        alert("The form has been successfully submitted");
+    }
 return true;
 }

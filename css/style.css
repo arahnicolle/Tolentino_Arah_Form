@@ -1,77 +1,50 @@
-
-#event_form{
-    margin-left: 20px;
-    padding: 40px;
-}
-label{
-    color: black;
-    font-family: monospace;
+body{
+    background-color: black;
     font-size: 15px;
-    font-style: normal;
-}
-legend{
-    color: black;
-    font-size: 15px;
-}
-input[type=textOne]{
-    border:2px solid black;
-    border-radius: 4px;
-    margin: 3px 0;
-    outline: none;
-    padding: 3px;
-    box-sizing: border-box;    
-}
-input[type=event], select{
-    border:2px solid black;
-    border-radius: 4px;
-    margin: 3px 0;
-    outline: none;
-    padding: 3px;
-    box-sizing: border-box;  
-}
-input[type=date]{
-    border:2px solid black;
-    border-radius: 4px;
-    margin: 3px 0;
-    outline: none;
-    padding: 3px;
-    box-sizing: border-box;  
-}
-input[type=date]{
-    border:2px solid black;
-    border-radius: 4px;
-    margin: 3px 0;
-    outline: none;
-    padding: 3px;
-    box-sizing: border-box;   
-}
-input[type=checkbox] + label{
-    display: inline;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-}
-input[type=checkbox]{
-    display: none;
-}
-input[type=checkbox] + label:before{
-    content: "\2714";
-    border: 0.1em solid #000;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    padding-bottom: 0.3em;
-    margin-right:0.2em;
-    vertical-align: bottom;
-    color: transparent;
-    transition: .2s;;
-}
-input[type=checkbox] + label:avtive:before{
-    transform: scale(0);
-}
-input[type=checkbox]:checked + label:before{
-    background-color: green;
-    border-color: green;
     color: white;
+}
+
+#container{
+    background-color: gray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid;
+    border-color:white;
+}
+
+fieldset{
+    height: 100%;
+    padding: 40px 100px 20px 40px;
+    border: 10px solid;
+    border-color: black;
+}
+
+#container .box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#container .input, select{
+    width: 150px;
+    height: 20px;
+    border: 1px solid;
+}
+
+#container select{
+    width: 150px;
+}
+
+.button{
+    padding: 0px;
+    width: 70px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#alert{
+    height: 30px;
+    width: 200px;
 }

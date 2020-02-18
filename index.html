@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EVENT FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/form.js"></script>
-    
 </head>
+
 <body>
-    <div style="margin-left: 300px; margin-right: 300px;margin-top: 100px;">
-    <div class="register">
-    <form method="" action="" name="event_form" onsubmit="return submitEvent()">
-        <fieldset>
-            <legend>Create a New Event</legend>
-        <label>Event Type: </label>
-        <select id="event">
-            <option>Choose one</option>
-            <option>Birthday</option>
-            <option>Wedding</option>
-            <option>PROM</option>
-        </select>
-        <br><br>
-        <label> Event Title: <input type="textOne" placeholder="type here" name="textOne"></label><br><br>
-        <label>Event Date: <input type="date" > to <input type="date" name="dateOne"></label><br><br>
-        <label>Posting Date: <input type="date" name="dateTwo"></label><br><br>
-        <input type="checkbox"id="text1" name="text-1" value="Is Registration Required?">
-        <label for="text1">Is Registration Required?</label><br><br>
-        <input type="checkbox"id="text2" name="text-2" value="Is this event associated with any Family Progrmas?">
-        <label for="text2">Is this event associated with any Family Progrmas?</label><br><br>
-        <input type="checkbox"id="text3" name="text-3" value="Upon Registration Completion, Are Users to Receive an Auto Generated Email?">
-        <label for="text3">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br><br>
-        <input type="checkbox"id="text4" name="text-4" value="Is there a Point of Contact?">
-        <label for="text4">Is there a Point of Contact?</label><br><br>
-        <input type="checkbox"id="text5" name="text-5" value="Is There a Hosting Command Point of Contact?">
-        <label for="text5">Is There a Hosting Command Point of Contact?</label><br><br>
-        <div style="margin-left: 200px; margin-top: 15px;">
-        <input type="submit" value="Save"><input style="margin-left: 10px" type="submit" value="Cancel">
+    <div>
+        <form>
+            <div id="container">
+                <fieldset>
+                        <label> Login <input type="text" class="input" id="login" required></label><br><br>
+                        <label> Password <input type="password" class="input" id="Pass" required></label><br><br>
+                        <label> Confirm Password <input type="password" class="input" id="confirmPassword" required></label><br><br>
+                        <label> Gender </label>
+                        <select id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <br><br>
+                        <label> Email <input type="email" class="input" id="email" required></label><br><br>
+                    <div class="button">
+                        <input type="submit" value="Register" onclick="submitPassword()">
+                    </div>
+                    <div id="alert">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
     </div>
-    </div>
-</fieldset>
-</form>
 </body>
+
 </html>

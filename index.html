@@ -14,16 +14,26 @@
         <form>
             <div id="container">
                 <fieldset>
-                        <label> Login <input type="text" class="input" id="login" required></label><br><br>
-                        <label> Password <input type="password" class="input" id="Pass" required></label><br><br>
-                        <label> Confirm Password <input type="password" class="input" id="confirmPassword" required></label><br><br>
-                        <label> Gender </label>
+                    <div class="login">
+                        <label> Login <input type="" class="logIn" id="login" required></label><br><br>
+                        </div>
+                        <div class="password">
+                        <label> Password <input type="password" class="firstPass" id="password1" required></label><br><br>
+                        </div>
+                        <div class="confirm">
+                            <label> Confirm Password <input type="password" class="confPass" id="password2" required></label><br><br>
+                        </div>
+                        <div class="gen">
+                        <label id="type"> Gender </label>
                         <select id="gender">
+                            <option value="Select">Male</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
-                        </select>
-                        <br><br>
-                        <label> Email <input type="email" class="input" id="email" required></label><br><br>
+                        </select><br><br>
+                    </div>
+                        <div class="e-mail">
+                        <label> Email <input type="email" class="e_mail" id="email" required></label><br><br>
+                        </div>
                     <div class="button">
                         <input type="submit" value="Register" onclick="submitPassword()">
                     </div>
